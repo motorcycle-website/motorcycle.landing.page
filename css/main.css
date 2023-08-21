@@ -2298,7 +2298,7 @@ body.page-home .section-hero__content {
 }
 
 .product-item__price {
-  font: normal 500 30px/1.1 Oswald;
+  font: normal 500 24px/1.1 Oswald;
   color: #e63619;
     margin-top: -10px;
 }
@@ -5063,7 +5063,7 @@ body.page-home .section-hero__content {
   }
 
   .product-item__price {
-    font-size: calc(18px + 12 * (100vw / 1920));
+    font-size: calc(10px + 12 * (100vw / 1920));
   }
     
     
