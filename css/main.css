@@ -668,6 +668,7 @@ a:hover {
 .logo__icon {
   display: block;
   position: relative;
+  width: 220px;
 }
 
 .logo__text {

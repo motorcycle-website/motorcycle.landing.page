@@ -210,7 +210,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 15px;}
 .scroll-to{position:absolute; bottom:30px; height:auto; right:calc((100% - 1490px) / 2);}
 .scroll-to a{position:relative; display:block; color:var(--black-color); font-weight:bold;  }
 .scroll-to i{background:#ffffff; height:36px; width:36px; -webkit-border-radius:50%; border-radius:50%; border:2px solid var(--main-color); line-height:32px; color:var(--main-color); text-align:center; animation: jumparrow 2s infinite;  }
-.scroll-to span{-webkit-transform:rotate(90deg) translateY(0px)); transform:rotate(90deg) translateY(0px); display:block; text-transform:uppercase; text-align: center;
+.scroll-to span{-webkit-transform:rotate(90deg) translateY(0px); transform:rotate(90deg) translateY(0px); display:block; text-transform:uppercase; text-align: center;
 margin: 0 0 25px; line-height: 1; transform-origin: center top; }
 
 button, select{-moz-appearance: none; -webkit-appearance: none;}
@@ -634,6 +634,15 @@ z-index: 0; opacity: 0.15; background:#dd0707;}
 
 .variation-section .color-variation-slider{max-width:1170px; margin:auto;  }
 .variation-section .color-variation-slider .owl-dots{position: absolute; top:0; margin:0 0 0 50px; right:100%; width:50px; }
+.variation-section .color-variation-slider .item-price-with-color {
+  text-align: right;
+  margin-top: 16px;
+  font-size: 20px;
+  color: #666666;
+}
+.variation-section .color-variation-slider .item-price-with-color span {
+  color: #e63619;
+}
 
 .variation-section .owl-dots button.owl-dot{margin-bottom:10px; display:inline-block; transition:all 400ms; }
 .variation-section .owl-dots button.owl-dot{width:32px; height:32px; position:relative; transition:all 400ms;  left:0;  }
@@ -641,11 +650,52 @@ z-index: 0; opacity: 0.15; background:#dd0707;}
 .variation-section .owl-dots button.owl-dot.active{left:40px;}
 .variation-section .owl-dots button.owl-dot.active:before{opacity:1; left:-40px; }
 
+.variation-section .owl-dots button.owl-dot.GraphiteYellow{background: #f7a30a;}
+.variation-section .owl-dots button.owl-dot.GraphiteBlue{background: #00a3e0;}
+.variation-section .owl-dots button.owl-dot.GraphiteRed{background: #ab2328;}
+.variation-section .owl-dots button.owl-dot.BlazingBlack{background: #c10016;}
+.variation-section .owl-dots button.owl-dot.SkylineBlue{background: #d0df00;}
+.variation-section .owl-dots button.owl-dot.WhiteFlame{background: #ab2328;}
+.variation-section .owl-dots button.owl-dot.SiverSpirit{background: #2ad2c9;}
 
-.variation-section .owl-dots button.owl-dot.brown{background:#8d5a32;}
-.variation-section .owl-dots button.owl-dot.navy{background:#41637f;}
-.variation-section .owl-dots button.owl-dot.green{background:#78a01f;}
-.variation-section .owl-dots button.owl-dot.black{background:#464646;}
+.variation-section .owl-dots button.owl-dot.CHROMEBRONZE{background: #58463c;}
+.variation-section .owl-dots button.owl-dot.CHROMERED{background: #ec2832;}
+.variation-section .owl-dots button.owl-dot.GUNMETALGREY{background: #817f7e;}
+.variation-section .owl-dots button.owl-dot.HALCYONBLACK{background: #2e2e2e;}
+.variation-section .owl-dots button.owl-dot.HALCYONGREEN{background: #41483a;}
+.variation-section .owl-dots button.owl-dot.HALCYONGREY{background: #bccfd1;}
+.variation-section .owl-dots button.owl-dot.SIGNALDESERTSAND{background: #e9be9c;}
+.variation-section .owl-dots button.owl-dot.SIGNALMARSHGREY{background: #868686;}
+.variation-section .owl-dots button.owl-dot.STEALTHBLACK{background: #393939;}
+
+.variation-section .owl-dots button.owl-dot.FIREBALLRED{background: #8e090c;}
+.variation-section .owl-dots button.owl-dot.FIREBALLYELLOW{background: #e19000;}
+.variation-section .owl-dots button.owl-dot.STELARBLUE{background: #1e2330;}
+.variation-section .owl-dots button.owl-dot.STELLARBLACK{background: #212121;}
+.variation-section .owl-dots button.owl-dot.STELLARRED{background: #3f1819;}
+.variation-section .owl-dots button.owl-dot.SUPERNOVABLUE{background: #1fa1cb;}
+.variation-section .owl-dots button.owl-dot.SUPERNOVABROWN{background: #412d21;}
+
+.variation-section .owl-dots button.owl-dot.CANYONRED{background: #811c1c;}
+.variation-section .owl-dots button.owl-dot.DOWNTOWN{background: #4d4d4d;}
+.variation-section .owl-dots button.owl-dot.MARK2{background: #d5d2cf;}
+.variation-section .owl-dots button.owl-dot.ORANGECRUSH{background: #fdba33;}
+.variation-section .owl-dots button.owl-dot.SUNSETSTRIP{background: #616060;}
+.variation-section .owl-dots button.owl-dot.VENTURABLUE{background: #26657d;}
+.variation-section .owl-dots button.owl-dot.BANKEREXPRESS{background: #959595;}
+
+.variation-section .owl-dots button.owl-dot.BRITISHRACINGGREEN{background: #4d5147;}
+.variation-section .owl-dots button.owl-dot.ROCKERRED{background: #a72429;}
+.variation-section .owl-dots button.owl-dot.DUXDELUXE{background: #d5d2cf;}
+.variation-section .owl-dots button.owl-dot.VENTURASTORM{background: #21748f;}
+.variation-section .owl-dots button.owl-dot.MISTERCLEAN{background: #bbb7b4;}
+
+.variation-section .owl-dots button.owl-dot.MIRAGESILVER{background: #9a9a9a;}
+.variation-section .owl-dots button.owl-dot.GRAVELGREY{background: #d1d0d0;}
+.variation-section .owl-dots button.owl-dot.LAKEBLUE{background: #3b5492;}
+.variation-section .owl-dots button.owl-dot.ROCKRED{background: #be2e2e;}
+.variation-section .owl-dots button.owl-dot.GRANITEBLACK{background: #4d4d4d;}
+.variation-section .owl-dots button.owl-dot.PINEGREEN{background: #2d5437;}
 
 .variation-section .owl-dots button.owl-dot.active{animation: ripple 1s linear infinite;  }
 
