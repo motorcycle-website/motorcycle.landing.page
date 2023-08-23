@@ -11,11 +11,15 @@
   <meta name="format-detection" content="telephone=no">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Include Bootstrap CSS and jQuery -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/uikit.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/ion.rangeSlider.css">
   <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body class="page-contacts">
@@ -118,17 +122,32 @@
               <h3 class="uk-h2">Gửi tin nhắn</h3>
             </div>
             <div class="section-content">
-              <form action="#!">
+
+              <div id="success"></div>
+              <form name="sentMessage" id="contactForm" novalidate="novalidate">
                 <div class="uk-grid uk-grid-small uk-child-width-1-3@s" data-uk-grid>
-                  <div><input class="uk-input uk-form-large" type="text" placeholder="Your Name"></div>
-                  <div><input class="uk-input uk-form-large" type="text" placeholder="Email"></div>
-                  <div><input class="uk-input uk-form-large" type="text" placeholder="Subject"></div>
-                  <div class="uk-width-1-1"><textarea class="uk-textarea uk-form-large"
-                      placeholder="Message"></textarea></div>
-                  <div class="uk-margin-medium-top uk-width-1-1 uk-text-center"><button
-                      class="uk-button uk-button-danger uk-button-large" type="submit">Send message</button></div>
+                  <div class="control-group">
+                    <input class="form-control uk-input uk-form-large" type="text" id="name" placeholder="Tên Bạn" required="required" data-validation-required-message="Vui lòng nhập tên bạn">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                    <input class="form-control uk-input uk-form-large" type="email" id="email" placeholder="Email Của Bạn" required="required" data-validation-required-message="Vui lòng nhập email">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                    <input class="form-control uk-input uk-form-large" type="text" id="subject" placeholder="Chủ Đề" required="required" data-validation-required-message="Vui lòng nhập chủ đề">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group uk-width-1-1">
+                    <textarea class="form-control uk-textarea uk-form-large" id="message" placeholder="Tin Nhắn" required="required" data-validation-required-message="Vui lòng nhập tin nhắn"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="uk-margin-medium-top uk-width-1-1 uk-text-center">
+                    <button class="uk-button uk-button-danger uk-button-large" type="submit" id="sendMessageButton">Gửi Tin Nhắn</button>
+                  </div>
                 </div>
               </form>
+
             </div>
           </div>
         </div>
@@ -216,8 +235,8 @@
                     <div class="latest-news-item">
                       <div class="latest-news-item__thumb"><img src="images/products-banner/scram-411-landing.jpg"
                           alt="news-thumb"></div>
-                      <div class="latest-news-item__info"><a class="latest-news-item__title"
-                          href="scram-411.html">Scram 411</a>
+                      <div class="latest-news-item__info"><a class="latest-news-item__title" href="scram-411.html">Scram
+                          411</a>
                         <div class="latest-news-item__date">Royal Enfield, 2023</div>
                       </div>
                     </div>
@@ -226,7 +245,8 @@
                     <div class="latest-news-item">
                       <div class="latest-news-item__thumb"><img src="images/products-banner/classic-350-motorcycle.jpg"
                           alt="news-thumb"></div>
-                      <div class="latest-news-item__info"><a class="latest-news-item__title" href="classic-350.html">Classic 350</a>
+                      <div class="latest-news-item__info"><a class="latest-news-item__title"
+                          href="classic-350.html">Classic 350</a>
                         <div class="latest-news-item__date">Royal Enfield, 2023</div>
                       </div>
                     </div>
@@ -235,7 +255,8 @@
                     <div class="latest-news-item">
                       <div class="latest-news-item__thumb"><img src="images/products-banner/himalayan-motorcycle.jpeg"
                           alt="news-thumb"></div>
-                      <div class="latest-news-item__info"><a class="latest-news-item__title" href="himalayan.html">Himalayan</a>
+                      <div class="latest-news-item__info"><a class="latest-news-item__title"
+                          href="himalayan.html">Himalayan</a>
                         <div class="latest-news-item__date">Royal Enfield, 2023</div>
                       </div>
                     </div>
@@ -312,6 +333,7 @@
     </footer>
 
   </div>
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
@@ -319,7 +341,13 @@
   <script src="js/slick.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/main.js"></script>
-
+  
+  <!-- Contact Javascript File -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
 
 </body>
 
