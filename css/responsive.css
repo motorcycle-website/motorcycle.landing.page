@@ -150,14 +150,14 @@
 	.banner-content{padding-top:15px; text-align:center; }
 	.testimonial-slider .item .testimonial__content{padding-left:0; }
 	.testimonial-slider .item .testimonial__content::before{font-size: 8rem; left: 0;}
-	.text-block p br{display:none;}
+	/* .text-block p br{display:none;} */
 	.container-fluid{padding-right:15px; padding-left:15px;}
 	.img-wrapper{margin-bottom:30px; }
 	.morevideo-slider{margin-left: 0;}
 	table.specifications td, table.specifications th{font-size:16px; }
 	.morevideo-slider .owl-nav{margin-top: 25px; left: 0; margin-left: 0; position: relative;}
 	.main-container > section{padding: 50px 0px;}
-	
+	.section-background .background-wrapper .background-inner {background-size: contain !important;}
 	
 	.h1, h1{font-size:2rem }
 	.color-variation-slider .owl-dots button.owl-dot{height: 32px; width: 32px;}

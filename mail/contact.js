@@ -8,7 +8,7 @@ $(function () {
             event.preventDefault();
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var subject = $("input#subject").val();
+            var phoneNumber = $("input#phoneNumber").val();
             var message = $("textarea#message").val();
 
             $this = $("#sendMessageButton");
@@ -20,7 +20,7 @@ $(function () {
                 from_name: name,
                 to_email: "hcm.royalenfield@gmail",
                 to_name: 'Royal Enfield Việt Nam',
-                subject: subject,
+                phone_number: phoneNumber,
                 message: message
             };
 
